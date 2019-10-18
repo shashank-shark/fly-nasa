@@ -1,0 +1,230 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+19/10/10 18:58:21 WARN Utils: Your hostname, shashank-Inspiron-15-3567 resolves to a loopback address: 127.0.1.1; using 10.6.6.11 instead (on interface wlp2s0)
+19/10/10 18:58:21 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+19/10/10 18:58:21 INFO SparkContext: Running Spark version 2.3.1
+19/10/10 18:58:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/10/10 18:58:21 INFO SparkContext: Submitted application: 68c4e618-9ed9-495d-a157-5eb42dc42c62
+19/10/10 18:58:21 INFO SecurityManager: Changing view acls to: shashank
+19/10/10 18:58:21 INFO SecurityManager: Changing modify acls to: shashank
+19/10/10 18:58:21 INFO SecurityManager: Changing view acls groups to: 
+19/10/10 18:58:21 INFO SecurityManager: Changing modify acls groups to: 
+19/10/10 18:58:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(shashank); groups with view permissions: Set(); users  with modify permissions: Set(shashank); groups with modify permissions: Set()
+19/10/10 18:58:22 INFO Utils: Successfully started service 'sparkDriver' on port 38095.
+19/10/10 18:58:22 INFO SparkEnv: Registering MapOutputTracker
+19/10/10 18:58:22 INFO SparkEnv: Registering BlockManagerMaster
+19/10/10 18:58:22 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/10/10 18:58:22 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/10/10 18:58:22 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-9edbc0a1-cb9e-4639-8abb-3cf177c79a08
+19/10/10 18:58:22 INFO MemoryStore: MemoryStore started with capacity 866.4 MB
+19/10/10 18:58:22 INFO SparkEnv: Registering OutputCommitCoordinator
+19/10/10 18:58:22 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/10/10 18:58:22 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.6.6.11:4040
+19/10/10 18:58:22 INFO Executor: Starting executor ID driver on host localhost
+19/10/10 18:58:22 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42747.
+19/10/10 18:58:22 INFO NettyBlockTransferService: Server created on 10.6.6.11:42747
+19/10/10 18:58:22 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/10/10 18:58:22 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.6.6.11, 42747, None)
+19/10/10 18:58:22 INFO BlockManagerMasterEndpoint: Registering block manager 10.6.6.11:42747 with 866.4 MB RAM, BlockManagerId(driver, 10.6.6.11, 42747, None)
+19/10/10 18:58:22 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.6.6.11, 42747, None)
+19/10/10 18:58:22 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.6.6.11, 42747, None)
+19/10/10 18:58:22 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/shashank/IdeaProjects/sparkReadFiles/spark-warehouse/').
+19/10/10 18:58:22 INFO SharedState: Warehouse path is 'file:/home/shashank/IdeaProjects/sparkReadFiles/spark-warehouse/'.
+19/10/10 18:58:23 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/10/10 18:58:23 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 220.7 KB, free 866.2 MB)
+19/10/10 18:58:23 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.7 KB, free 866.2 MB)
+19/10/10 18:58:23 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.6.6.11:42747 (size: 20.7 KB, free: 866.4 MB)
+19/10/10 18:58:23 INFO SparkContext: Created broadcast 0 from load at Application.java:31
+19/10/10 18:58:24 INFO FileInputFormat: Total input paths to process : 1
+19/10/10 18:58:24 INFO FileInputFormat: Total input paths to process : 1
+19/10/10 18:58:24 INFO CombineFileInputFormat: DEBUG: Terminated node allocation with : CompletedNodes: 1, size left: 2002056
+19/10/10 18:58:24 INFO SparkContext: Starting job: load at Application.java:31
+19/10/10 18:58:24 INFO DAGScheduler: Got job 0 (load at Application.java:31) with 1 output partitions
+19/10/10 18:58:24 INFO DAGScheduler: Final stage: ResultStage 0 (load at Application.java:31)
+19/10/10 18:58:24 INFO DAGScheduler: Parents of final stage: List()
+19/10/10 18:58:24 INFO DAGScheduler: Missing parents: List()
+19/10/10 18:58:24 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at load at Application.java:31), which has no missing parents
+19/10/10 18:58:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 6.0 KB, free 866.2 MB)
+19/10/10 18:58:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.6 KB, free 866.2 MB)
+19/10/10 18:58:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.6.6.11:42747 (size: 3.6 KB, free: 866.4 MB)
+19/10/10 18:58:24 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+19/10/10 18:58:24 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at load at Application.java:31) (first 15 tasks are for partitions Vector(0))
+19/10/10 18:58:24 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+19/10/10 18:58:24 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8007 bytes)
+19/10/10 18:58:24 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+19/10/10 18:58:24 INFO BinaryFileRDD: Input split: Paths:/home/shashank/IdeaProjects/sparkReadFiles/src/main/resources/durham-parks.json:0+2002056
+19/10/10 18:58:24 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 3292 bytes result sent to driver
+19/10/10 18:58:24 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 441 ms on localhost (executor driver) (1/1)
+19/10/10 18:58:24 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+19/10/10 18:58:24 INFO DAGScheduler: ResultStage 0 (load at Application.java:31) finished in 0.524 s
+19/10/10 18:58:24 INFO DAGScheduler: Job 0 finished: load at Application.java:31, took 0.580555 s
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 3
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 24
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 10
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 20
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 13
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 4
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 19
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 21
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 18
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 16
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 23
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 17
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 12
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 22
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 5
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 8
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 11
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 6
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 1
+19/10/10 18:58:25 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 10.6.6.11:42747 in memory (size: 3.6 KB, free: 866.4 MB)
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 7
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 0
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 9
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 15
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 2
+19/10/10 18:58:25 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 10.6.6.11:42747 in memory (size: 20.7 KB, free: 866.4 MB)
+19/10/10 18:58:25 INFO ContextCleaner: Cleaned accumulator 14
+19/10/10 18:58:26 WARN Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+19/10/10 18:58:26 INFO FileSourceStrategy: Pruning directories with: 
+19/10/10 18:58:26 INFO FileSourceStrategy: Post-Scan Filters: 
+19/10/10 18:58:26 INFO FileSourceStrategy: Output Data Schema: struct<datasetid: string, fields: struct<acres: double, address: string, adlt_baseb: string, adlt_softb: string, athl_field: string ... 41 more fields>, geometry: struct<coordinates: array<double>, type: string>, record_timestamp: string, recordid: string ... 3 more fields>
+19/10/10 18:58:26 INFO FileSourceScanExec: Pushed Filters: 
+19/10/10 18:58:27 INFO CodeGenerator: Code generated in 252.501602 ms
+19/10/10 18:58:27 INFO CodeGenerator: Code generated in 142.7026 ms
+19/10/10 18:58:27 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 220.2 KB, free 866.2 MB)
+19/10/10 18:58:27 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 20.6 KB, free 866.2 MB)
+19/10/10 18:58:27 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.6.6.11:42747 (size: 20.6 KB, free: 866.4 MB)
+19/10/10 18:58:27 INFO SparkContext: Created broadcast 2 from show at Application.java:18
+19/10/10 18:58:27 INFO FileSourceScanExec: Planning scan with bin packing, max size: 6196360 bytes, open cost is considered as scanning 4194304 bytes.
+19/10/10 18:58:27 INFO SparkContext: Starting job: show at Application.java:18
+19/10/10 18:58:27 INFO DAGScheduler: Got job 1 (show at Application.java:18) with 1 output partitions
+19/10/10 18:58:27 INFO DAGScheduler: Final stage: ResultStage 1 (show at Application.java:18)
+19/10/10 18:58:27 INFO DAGScheduler: Parents of final stage: List()
+19/10/10 18:58:27 INFO DAGScheduler: Missing parents: List()
+19/10/10 18:58:27 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[6] at show at Application.java:18), which has no missing parents
+19/10/10 18:58:27 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 43.2 KB, free 866.1 MB)
+19/10/10 18:58:27 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 13.2 KB, free 866.1 MB)
+19/10/10 18:58:27 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.6.6.11:42747 (size: 13.2 KB, free: 866.4 MB)
+19/10/10 18:58:27 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1039
+19/10/10 18:58:27 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at show at Application.java:18) (first 15 tasks are for partitions Vector(0))
+19/10/10 18:58:27 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+19/10/10 18:58:27 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 8351 bytes)
+19/10/10 18:58:27 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+19/10/10 18:58:27 INFO FileScanRDD: Reading File path: file:///home/shashank/IdeaProjects/sparkReadFiles/src/main/resources/durham-parks.json, range: 0-2002056, partition values: [empty row]
+19/10/10 18:58:27 INFO CodeGenerator: Code generated in 71.8603 ms
+19/10/10 18:58:28 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 93847 bytes result sent to driver
+19/10/10 18:58:28 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 588 ms on localhost (executor driver) (1/1)
+19/10/10 18:58:28 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+19/10/10 18:58:28 INFO DAGScheduler: ResultStage 1 (show at Application.java:18) finished in 0.614 s
+19/10/10 18:58:28 INFO DAGScheduler: Job 1 finished: show at Application.java:18, took 0.624167 s
++----------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+------+--------------+-------+------------------+------------------+------------------+
+| datasetid|              fields|            geometry|    record_timestamp|            recordid|             park_id|           park_name|  city|has_playground|zipcode|     land_in_acres|              geoX|              geoY|
++----------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+------+--------------+-------+------------------+------------------+------------------+
+|city-parks|[11.52028555, 110...|[[-78.88710172937...|2018-09-01T23:00:...|2ff6903baee78eca1...| city-parks_7_Durham|         BURTON PARK|Durhma|             Y|27701.0|       11.52028555|  -78.887101729377| 35.97782539263909|
+|city-parks|[12.25698762, 231...|[[-78.92181708385...|2018-09-01T23:00:...|de1a76509b5ab8adb...|city-parks_35_Durham|       ROCKWOOD PARK|Durhma|             Y|27707.0|       12.25698762| -78.9218170838534|35.972950743249214|
+|city-parks|[101.74644709, 35...|[[-78.96868492509...|2018-09-01T23:00:...|1b08024879de55d7e...|city-parks_37_Durham|    SANDY CREEK PARK|Durhma|             N|27707.0|      101.74644709|-78.96868492509134|35.969520579760456|
+|city-parks|[11.97479141, 110...|[[-78.95585544233...|2018-09-01T23:00:...|dccd5b3f047428bd6...|city-parks_27_Durham|  MORREENE ROAD PARK|Durhma|             Y|27705.0|       11.97479141|-78.95585544233714| 36.00703991938609|
+|city-parks|[0.43687249, 1100...|[[-78.88244500505...|2018-09-01T23:00:...|89dd42fdbf7ca5b6e...|city-parks_13_Durham|    DREW/GRANBY PARK|Durhma|             Y|27701.0|        0.43687249|-78.88244500505519|36.001372698873865|
+|city-parks|[20.08746668, 283...|[[-78.95247102687...|2018-09-01T23:00:...|0e33e274de76d8096...|city-parks_67_Durham|CORNWALLIS ROAD PARK|Durhma|             Y|27705.0|       20.08746668|-78.95247102687885| 35.97845591554436|
+|city-parks|[14.62743857, 280...|[[-78.86574128098...|2018-09-01T23:00:...|5296f611cd5a85ae5...|city-parks_74_Durham|   SPRUCE PINE LODGE|Durhma|             Y|27503.0|       14.62743857| -78.8657412809851| 36.17446566800999|
+|city-parks|[7.7665654, 1500 ...|[[-78.87163711684...|2018-09-01T23:00:...|49c5073b72e3fec73...|city-parks_50_Durham|LITTLE RIVER FISH...|Durhma|             N|27712.0|         7.7665654|-78.87163711684084| 36.12714426429574|
+|city-parks|[1.82773177, 1900...|[[-78.92170094018...|2018-09-01T23:00:...|cc5c46c928f833bb2...|city-parks_45_Durham|       WESTOVER PARK|Durhma|             Y|27705.0|        1.82773177|-78.92170094018387| 36.02510393190939|
+|city-parks|[0.54514956999999...|[[-78.92189381037...|2018-09-01T23:00:...|a250f3ff1a608a2dd...|city-parks_51_Durham|      MAPLEWOOD PARK|Durhma|             Y|27701.0|0.5451495699999991| -78.9218938103797| 35.99381294353847|
++----------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+------+--------------+-------+------------------+------------------+------------------+
+only showing top 10 rows
+
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 221.8 KB, free 865.9 MB)
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 20.8 KB, free 865.9 MB)
+19/10/10 18:58:28 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 10.6.6.11:42747 (size: 20.8 KB, free: 866.3 MB)
+19/10/10 18:58:28 INFO SparkContext: Created broadcast 4 from load at Application.java:80
+19/10/10 18:58:28 INFO FileInputFormat: Total input paths to process : 1
+19/10/10 18:58:28 INFO FileInputFormat: Total input paths to process : 1
+19/10/10 18:58:28 INFO CombineFileInputFormat: DEBUG: Terminated node allocation with : CompletedNodes: 1, size left: 223510
+19/10/10 18:58:28 INFO SparkContext: Starting job: load at Application.java:80
+19/10/10 18:58:28 INFO DAGScheduler: Got job 2 (load at Application.java:80) with 1 output partitions
+19/10/10 18:58:28 INFO DAGScheduler: Final stage: ResultStage 2 (load at Application.java:80)
+19/10/10 18:58:28 INFO DAGScheduler: Parents of final stage: List()
+19/10/10 18:58:28 INFO DAGScheduler: Missing parents: List()
+19/10/10 18:58:28 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[9] at load at Application.java:80), which has no missing parents
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 5.4 KB, free 865.9 MB)
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.4 KB, free 865.9 MB)
+19/10/10 18:58:28 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 10.6.6.11:42747 (size: 3.4 KB, free: 866.3 MB)
+19/10/10 18:58:28 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1039
+19/10/10 18:58:28 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[9] at load at Application.java:80) (first 15 tasks are for partitions Vector(0))
+19/10/10 18:58:28 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+19/10/10 18:58:28 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 8018 bytes)
+19/10/10 18:58:28 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+19/10/10 18:58:28 INFO BinaryFileRDD: Input split: Paths:/home/shashank/IdeaProjects/sparkReadFiles/src/main/resources/philadelphia_recreations.csv:0+223510
+19/10/10 18:58:28 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1037 bytes result sent to driver
+19/10/10 18:58:28 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 109 ms on localhost (executor driver) (1/1)
+19/10/10 18:58:28 INFO DAGScheduler: ResultStage 2 (load at Application.java:80) finished in 0.120 s
+19/10/10 18:58:28 INFO DAGScheduler: Job 2 finished: load at Application.java:80, took 0.123903 s
+19/10/10 18:58:28 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+19/10/10 18:58:28 INFO FileSourceStrategy: Pruning directories with: 
+19/10/10 18:58:28 INFO FileSourceStrategy: Post-Scan Filters: Contains(lower(USE_#153), park)
+19/10/10 18:58:28 INFO FileSourceStrategy: Output Data Schema: struct<OBJECTID: string, ASSET_NAME: string, SITE_NAME: string, CHILD_OF: string, ADDRESS: string ... 17 more fields>
+19/10/10 18:58:28 INFO FileSourceScanExec: Pushed Filters: 
+19/10/10 18:58:28 INFO CodeGenerator: Code generated in 58.439214 ms
+19/10/10 18:58:28 INFO CodeGenerator: Code generated in 26.756755 ms
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 221.2 KB, free 865.6 MB)
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 20.7 KB, free 865.6 MB)
+19/10/10 18:58:28 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 10.6.6.11:42747 (size: 20.7 KB, free: 866.3 MB)
+19/10/10 18:58:28 INFO SparkContext: Created broadcast 6 from show at Application.java:21
+19/10/10 18:58:28 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4417814 bytes, open cost is considered as scanning 4194304 bytes.
+19/10/10 18:58:28 INFO SparkContext: Starting job: show at Application.java:21
+19/10/10 18:58:28 INFO DAGScheduler: Got job 3 (show at Application.java:21) with 1 output partitions
+19/10/10 18:58:28 INFO DAGScheduler: Final stage: ResultStage 3 (show at Application.java:21)
+19/10/10 18:58:28 INFO DAGScheduler: Parents of final stage: List()
+19/10/10 18:58:28 INFO DAGScheduler: Missing parents: List()
+19/10/10 18:58:28 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[14] at show at Application.java:21), which has no missing parents
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 18.4 KB, free 865.6 MB)
+19/10/10 18:58:28 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 7.7 KB, free 865.6 MB)
+19/10/10 18:58:28 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 10.6.6.11:42747 (size: 7.7 KB, free: 866.3 MB)
+19/10/10 18:58:28 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1039
+19/10/10 18:58:28 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[14] at show at Application.java:21) (first 15 tasks are for partitions Vector(0))
+19/10/10 18:58:28 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+19/10/10 18:58:28 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 8362 bytes)
+19/10/10 18:58:28 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+19/10/10 18:58:28 INFO FileScanRDD: Reading File path: file:///home/shashank/IdeaProjects/sparkReadFiles/src/main/resources/philadelphia_recreations.csv, range: 0-223510, partition values: [empty row]
+19/10/10 18:58:28 INFO CodeGenerator: Code generated in 45.231568 ms
+19/10/10 18:58:28 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 5131 bytes result sent to driver
+19/10/10 18:58:28 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 147 ms on localhost (executor driver) (1/1)
+19/10/10 18:58:28 INFO DAGScheduler: ResultStage 3 (show at Application.java:21) finished in 0.170 s
+19/10/10 18:58:28 INFO DAGScheduler: Job 3 finished: show at Application.java:21, took 0.174083 s
++--------+--------------------+--------------------+--------------------+--------------------+----+--------------------+------------------+----------------+-------------+-------+--------------------+----------+-----+-----------+--------------+--------+------+--------------------+
+|OBJECTID|          ASSET_NAME|           SITE_NAME|            CHILD_OF|             ADDRESS|TYPE|                USE_|       DESCRIPTION|         SQ_FEET|      ACREAGE|ZIPCODE|              ALLIAS|CHRONOLOGY|NOTES|DATE_EDITED|     EDITED_BY|OCCUPANT|TENANT|               LABEL|
++--------+--------------------+--------------------+--------------------+--------------------+----+--------------------+------------------+----------------+-------------+-------+--------------------+----------+-----+-----------+--------------+--------+------+--------------------+
+|       2|    Schuylkill Banks|    Schuylkill Banks|    Schuylkill Banks|   400-16 S TANEY ST|Land|Park- Linear\Parkway|              null| 658060.84696869|  15.10705875|  19103|                null|      null| null|  11Feb2015|Nora Dougherty|     PPR|  null|    Schuylkill Banks|
+|       4|      Peter's Island|      Peter's Island|      Peter's Island|                null|Land|Park- Regional/Wa...|Regional\Watershed|  83679.29305106|   1.92101992|   null|                null|      null| null|  22Aug2014|Nora Dougherty|     PPR|  null|      Peter's Island|
+|       5|Frankford Arsenal...|Frankford Arsenal...|Frankford Arsenal...|  5625 Tacony Street|Land|  Park- Neighborhood|              null| 477860.28847784|  10.97020661|   null|    PA Fish and Boat|      2014| null|  22Aug2014|Nora Dougherty|     PPR|  null|Frankford Arsenal...|
+|       6|Orthodox Street P...|Orthodox Street P...|Orthodox Street P...|3101 Orthodox Street|Land|  Park- Neighborhood|              null| 457597.04880592|  10.50502478|   null|                null|      2014| null|  22Aug2014|Nora Dougherty|    null|  null|            Orthodox|
+|       7|Wissahickon Valle...|Wissahickon Valle...|Wissahickon Valle...|                    |Land|Park- Regional/Wa...|                  |88949112.8413902|2043.81972119|  19128|                    |      1867|     |  12Nov2013|Vanessa Miller|     PPR|  null|Wissahickon Valle...|
+|       8| West Fairmount Park| West Fairmount Park| West Fairmount Park|                    |Land|Park- Regional/Wa...|                  |61124064.2157099|1403.22104483|  19131|                    |      1866|     |  12Nov2013|Vanessa Miller|     PPR|  null| West Fairmount Park|
+|       9|Pennypack Creek Park|Pennypack Creek Park|Pennypack Creek Park|                    |Land|Park- Regional/Wa...|                  |58572936.1393227|1344.65496859|  19152|                    | 1905-1929|     |  12Nov2013|Vanessa Miller|     PPR|  null|Pennypack Creek Park|
+|      10|    Cobbs Creek Park|    Cobbs Creek Park|    Cobbs Creek Park|                    |Land|Park- Regional/Wa...|                  |37055823.2343341|    850.68805|  19143|                    | 1904-1928|     |  12Nov2013|Vanessa Miller|     PPR|  null|    Cobbs Creek Park|
+|      11| East Fairmount Park| East Fairmount Park| East Fairmount Park|                    |Land|Park- Regional/Wa...|                  |28326588.4612519| 650.29159247|  19121|                    |      1844|     |  12Nov2013|Vanessa Miller|     PPR|  null| East Fairmount Park|
+|      12|   Tacony Creek Park|   Tacony Creek Park|   Tacony Creek Park|                    |Land|Park- Regional/Wa...|                  | 13223017.770586| 303.55993257|  19120|                    |      1915|     |  12Nov2013|Vanessa Miller|     PPR|  null|   Tacony Creek Park|
+|      13|Franklin D. Roose...|Franklin D. Roose...|Franklin D. Roose...|     3500 S BROAD ST|Land|  Park- Metropolitan|                  |8746429.90257898| 200.79120497|  19145|                    | 1922-1924|     |  12Nov2013|Vanessa Miller|     PPR|  null|            FDR Park|
+|      14|        Hunting Park|        Hunting Park|        Hunting Park|1101 W HUNTING PA...|Land|     Park- Community|                  |3246603.33243125|  74.53205507|  19140|                    |      1854|     |  12Nov2013|Vanessa Miller|     PPR|  null|        Hunting Park|
+|      15|         Awbury Park|         Awbury Park|         Awbury Park|    6101 ARDLEIGH ST|Land|     Park- Community|                  |1226461.75911391|  28.15580039|  19138|                null|      1920|     |  12Nov2013|Vanessa Miller|     PPR|  null|              Awbury|
+|      16|         Fisher Park|         Fisher Park|         Fisher Park|      6000 N 05TH ST|Land|     Park- Community|                  |1067144.68896532|  24.49836909|  19120|                    |      1909|     |  12Nov2013|Vanessa Miller|     PPR|  null|         Fisher Park|
+|      17|Eastwick Regional...|Eastwick Regional...|Eastwick Regional...|   80TH ST & MARS PL|Land|     Park- Community|                  |1017678.54950109|  23.36277824|  19153|                    |          |     |  12Nov2013|Vanessa Miller|     PPR|  null|Eastwick Regional...|
+|      38|   82nd & Lyons Park|   82nd & Lyons Park|   82nd & Lyons Park|      8200 LYONS AVE|Land|          Park- Mini|                  |  39709.94010105|   0.91161843|  19153|Pepper School Pla...|          |     |  12Nov2013|Vanessa Miller|     PPR|  null|   82nd & Lyons Park|
+|      45|60th & Baltimore ...|60th & Baltimore ...|60th & Baltimore ...|  5961 BALTIMORE AVE|Land|          Park- Mini|                  |  11875.55133602|   0.27262624|  19143|                    |          |     |  12Nov2013|Vanessa Miller|     PPR|  null|60th & Baltimore ...|
+|      48|47th & Grays Ferr...|47th & Grays Ferr...|47th & Grays Ferr...|   4700 PASCHALL AVE|Land|          Park- Mini|                  |   7388.58129733|   0.16961917|  19143|                    |          |     |  12Nov2013|Vanessa Miller|     PPR|  null|47th & Graysferry...|
+|      53|      Community Park|      Community Park|      Community Park|854-56 N LAWRENCE ST|Land|          Park- Mini|                  |    3560.4412319|   0.08173681|  19123|                    |          |     |  12Nov2013|Vanessa Miller|     PPR|  null|      Community Park|
+|      54|71st & Dicks Tria...|71st & Dicks Tria...|71st & Dicks Tria...|      2700 S 71ST ST|Land|          Park- Mini|                  |   2965.24275671|   0.06807288|  19153|                    |          |     |  12Nov2013|Vanessa Miller|     PPR|  null|71st & Dicks Tria...|
++--------+--------------------+--------------------+--------------------+--------------------+----+--------------------+------------------+----------------+-------------+-------+--------------------+----------+-----+-----------+--------------+--------+------+--------------------+
+only showing top 20 rows
+
+19/10/10 18:58:28 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+19/10/10 18:58:28 INFO SparkContext: Invoking stop() from shutdown hook
+19/10/10 18:58:28 INFO SparkUI: Stopped Spark web UI at http://10.6.6.11:4040
+19/10/10 18:58:28 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/10/10 18:58:28 INFO MemoryStore: MemoryStore cleared
+19/10/10 18:58:28 INFO BlockManager: BlockManager stopped
+19/10/10 18:58:28 INFO BlockManagerMaster: BlockManagerMaster stopped
+19/10/10 18:58:28 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/10/10 18:58:28 INFO SparkContext: Successfully stopped SparkContext
+19/10/10 18:58:28 INFO ShutdownHookManager: Shutdown hook called
+19/10/10 18:58:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-f1c59586-2feb-4cfb-9224-9b459d2ebc7c
