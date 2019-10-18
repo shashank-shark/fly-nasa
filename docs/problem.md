@@ -8,8 +8,8 @@ Wiring continues to be too expensive to remove once it is installed, even with t
 
 The project motivates the aerospace industry and technology providers to establish:
 
-### `A new emphasis for system engineering approaches to reduce cables and connectors`.
+### A new emphasis for system engineering approaches to reduce cables and connectors.
 
-### `Provisions for modularity and accessibility in the vehicle architecture`.
+### Provisions for modularity and accessibility in the vehicle architecture.
 
-### `A set of technologies that support alternatives to wired connectivity`.
+### A set of technologies that support alternatives to wired connectivity.
