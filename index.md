@@ -6,4 +6,4 @@
 |---|---|---|
 | 1  | Now, what's the problem ?  | [Link](./docs/problem.md)  |
 | 2  | What problems we are trying to solve ?  | [Link](./docs/problemList.md)  |
-|   |   |   |
+| 3  |  WAIC | [Link](./docs/waic.md)  |
