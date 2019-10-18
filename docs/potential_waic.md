@@ -2,10 +2,10 @@
 
 We divide these applications into broadly `4`.
 
-### `(1)` LOW DATA RATE, Interior Applications (LI)
-### `(2)` LOW DATA RATE, Outside Applications (LO)
-### `(3)` HIGH DATA RATE, Interior Applications (HI)
-### `(4)` HIGH DATA RATE, Outside Applications (HO)
+### 1. Low Data Rate, Interior Applications (LI)
+### 2. Low Data Rate, Outside Applications (LO)
+### 3. High Data Rate, Interior Applications (HI)
+### 4. High Data Rate, Outside Applications (HO)
 
 ## Under Low Data Rate - Interior Applications
 
