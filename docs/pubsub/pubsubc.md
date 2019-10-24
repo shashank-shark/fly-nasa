@@ -22,5 +22,5 @@ The pattern that I am demonstrating is not just a typical `publisher-subscriber`
 
 Consider the following block diagram which demonstrates the flow.
 
-![publisher image](/images/pub1.svg)
+![publisher image](./pub1.svg)
 
